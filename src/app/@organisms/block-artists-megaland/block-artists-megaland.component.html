@@ -1,0 +1,41 @@
+<ng-container *ngIf="ObjArtMega">
+    <ng-container *ngIf="ObjArtMega.status == 'not_started'">
+        <article class="artist-title">
+            <h2>{{ObjArtMega.title}}</h2>
+        </article>
+        <section class="artist-wrapper">
+
+            <span class="span-left">
+        <img src="../../../assets/img/Megaland/hojas-left.svg" alt="Leafs" />
+      </span>
+            <span class="span-right">
+        <img src="../../../assets/img/Megaland/hojas-right.svg" alt="Leafs" />
+      </span>
+            <article class="featured-artists">
+                <ng-container *ngFor="let _art of ObjArtMega.artists">
+                    <div *ngIf="_art.isFeatured">
+                        <mol-artist-megaland [artist]="_art" [isMobile]="isMobile"></mol-artist-megaland>
+                    </div>
+                </ng-container>
+            </article>
+
+            <article class="artists">
+                <ng-container *ngFor="let _art of ObjArtMega.artists">
+                    <div *ngIf="!_art.isFeatured">
+                        <mol-artist-megaland [artist]="_art" [isMobile]="isMobile"></mol-artist-megaland>
+                    </div>
+                </ng-container>
+            </article>
+
+            <article class="buy-tickets">
+                <a href="{{ObjArtMega.urlBuyTicket}}" target="_blank">
+                    <button comscore-pageview-candidate-click mat-button class="ViewMore">{{ObjArtMega.textBuyTicket}}</button>
+                </a>
+
+                <p>O en tu radio sintoniza La Mega</p>
+            </article>
+        </section>
+    </ng-container>
+
+
+</ng-container>

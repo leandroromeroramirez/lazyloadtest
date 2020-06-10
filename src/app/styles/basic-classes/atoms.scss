@@ -1,0 +1,76 @@
+.at-name-mega {
+  @extend %base-headIt;
+  @extend %inmid-box;
+   background-color: $red-orange;
+    border-radius: $rounded;
+    color: $white;
+    font-size: 27px;
+    padding: 3px 10px;
+}
+.at-top20 {
+  @extend %base-headIt;
+  @extend %inmid-box;
+  color: $gulf-blue;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+.text-torch-red {
+  color: $torch-red;
+}
+@media (min-width: $medium-min) {
+  .at-name-mega  {
+      border-radius: $flag-rounded;
+      font-size: 40px;
+      margin-right: 4px;
+      padding: 3px 15px;
+  }
+  .at-top20{
+    font-size: 60px;
+  }
+}
+.at-live {
+  border-radius: $rounded;
+  background-color: $red-orange;
+  color: $white;
+  font-size: 9px; //
+  text-align: center;
+  //width: 60px;
+  padding: 2px 9px;
+  text-transform: uppercase;
+  @extend %base-headReg;
+}
+
+.at-top {
+  background-color: $black;
+  border-radius: $flag-rounded;
+  color: $white;
+  font-size: 35px;
+  font-weight: normal;
+  line-height: .85;
+  padding: 4px 15px;
+  @extend %base-headIt;
+  @extend %inmid-box;
+}
+@media (min-width: $medium-min) { 
+  .at-top { font-size: 60px; }
+}
+
+//slider buttons
+.btn-slider {
+  align-items: center;
+  background-color: $gulf-blue;
+  border-radius: 50%;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+  height: 50px;
+  justify-content: center;
+  width: 50px;
+  i {
+    line-height: .8;
+  }
+}
+.torch-red {
+  color: #FF1157;
+}

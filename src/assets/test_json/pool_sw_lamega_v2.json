@@ -1,0 +1,180 @@
+{
+    "data": [
+          {
+            "categoryName": "Cancion del año",
+            "allowedVoting": true,
+            "nominates":[
+                {
+                    "nomineesId": 120,
+                    "name": "Marc Anthony",
+                    "song": "Flor palida",
+                    "votingId": 55,
+                    "video": "https://www.youtube.com/watch?v=My2FRPA3Gf8",
+                    "image": {
+                        "title": "",
+                        "alt": "Marc Anthony",
+                        "credits": null,
+                        "description": null,
+                        "url": "http://dev-lmgback.rcnra.4cloud.co/sites/default/files/%20artists/descarga%20%281%29.jpg",
+                        "derivatives": null
+                    }
+                },
+                {
+                    "nomineesId": 121,
+                    "name": "Karol G",
+                    "song": "Tusa",
+                    "votingId": 55,
+                    "video": "https://www.youtube.com/watch?v=My2FRPA3Gf8",
+                    "image": {
+                        "title": "",
+                        "alt": "Karol G",
+                        "credits": null,
+                        "description": null,
+                        "url": "http://dev-lmgback.rcnra.4cloud.co/sites/default/files/%20artists/descarga%20%281%29.jpg",
+                        "derivatives": null
+                    }
+                },
+                {
+                    "nomineesId": 122,
+                    "name": "Camilo",
+                    "song": "Tu tu",
+                    "votingId": 55,
+                    "video": "https://www.youtube.com/watch?v=My2FRPA3Gf8",
+                    "image": {
+                        "title": "",
+                        "alt": "Camilo",
+                        "credits": null,
+                        "description": null,
+                        "url": "http://dev-lmgback.rcnra.4cloud.co/sites/default/files/%20artists/descarga%20%281%29.jpg",
+                        "derivatives": null
+                    }
+                }
+            ]
+          },
+          {
+            "categoryName": "Artista del año",
+            "allowedVoting": true,
+            "nominates": [
+                {
+                    "nomineesId": 123,
+                    "name": "Marc Anthony",
+                    "song": null,
+                    "votingId": 55,
+                    "video": null,
+                    "image": {
+                        "title": "",
+                        "alt": "Marc Anthony",
+                        "credits": null,
+                        "description": null,
+                        "url": "http://dev-lmgback.rcnra.4cloud.co/sites/default/files/%20artists/descarga%20%281%29.jpg",
+                        "derivatives": null
+                    }
+                },
+                {
+                    "nomineesId": 124,
+                    "name": "Karol G",
+                    "song": null,
+                    "votingId": 55,
+                    "video": null,
+                    "image": {
+                        "title": "",
+                        "alt": "Karol G",
+                        "credits": null,
+                        "description": null,
+                        "url": "http://dev-lmgback.rcnra.4cloud.co/sites/default/files/%20artists/descarga%20%281%29.jpg",
+                        "derivatives": null
+                    }
+                },
+                {
+                    "nomineesId": 125,
+                    "name": "Camilo",
+                    "song": null,
+                    "votingId": 55,
+                    "video": null,
+                    "image": {
+                        "title": "",
+                        "alt": "Camilo",
+                        "credits": null,
+                        "description": null,
+                        "url": "http://dev-lmgback.rcnra.4cloud.co/sites/default/files/%20artists/descarga%20%281%29.jpg",
+                        "derivatives": null
+                    }
+                }
+            ]
+          },
+          {
+            "categoryName": "Productor del año",
+            "allowedVoting": false,
+            "nominates":[
+                {
+                    "nomineesId": 123,
+                    "name": "Pepito perez",
+                    "song": null,
+                    "votingId": 55,
+                    "video": null,
+                    "image": {
+                        "title": "",
+                        "alt": "Pepito perez",
+                        "credits": null,
+                        "description": null,
+                        "url": "http://dev-lmgback.rcnra.4cloud.co/sites/default/files/%20artists/descarga%20%281%29.jpg",
+                        "derivatives": null
+                    }
+                },
+                {
+                    "nomineesId": 124,
+                    "name": "Homero Simpson",
+                    "song": null,
+                    "votingId": 55,
+                    "video": null,
+                    "image": {
+                        "title": "",
+                        "alt": "Homero Simpson",
+                        "credits": null,
+                        "description": null,
+                        "url": "http://dev-lmgback.rcnra.4cloud.co/sites/default/files/%20artists/descarga%20%281%29.jpg",
+                        "derivatives": null
+                    }
+                },
+                {
+                    "nomineesId": 125,
+                    "name": "Goku",
+                    "song": null,
+                    "votingId": 55,
+                    "video": null,
+                    "image": {
+                        "title": "",
+                        "alt": "Goku",
+                        "credits": null,
+                        "description": null,
+                        "url": "http://dev-lmgback.rcnra.4cloud.co/sites/default/files/%20artists/descarga%20%281%29.jpg",
+                        "derivatives": null
+                    }
+                }
+            ]
+          }  
+    ],
+    "metadata": {
+        "root": "data",
+        "path": "/api/restful/voting/126",
+        "page": 0,
+        "pages": 1,
+        "limit": 1,
+        "count": 10,
+        "voting": {
+            "id": 126,
+            "title": "Premios nuestra tieraa",
+            "description": "Lorem ipsum dolor soler ament",
+            "voteStartDate": 1580907600,
+            "voteEndDate": 1589331600
+        },
+        "image": {
+            "title": "",
+            "alt": "Goku",
+            "credits": null,
+            "description": null,
+            "url": "https://files.lafm.com.co/assets/public/google-ads/ads-test/logo-premios-nuestra-tierra.png",
+            "derivatives": null
+        }
+    }
+}

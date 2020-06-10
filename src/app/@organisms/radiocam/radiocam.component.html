@@ -1,0 +1,156 @@
+<ng-container *ngIf="onlyOne ; else tabs">
+    <ng-container *ngIf="RadioCam; else tvObj">
+        <div class="p-none">
+            <div class="radiocam-wraper radioCam animated fadeIn">
+                <span class="radio-gradient"></span>
+                <div>
+                    <div class="radio-title">
+                        <h2 class="at-top20 text-white">RADIOCAM</h2>
+                    </div>
+                    <div class="at-live">en vivo</div>
+                    <h3 class="title-token py-1">{{ RadioCam.title }}</h3>
+                    <p>{{ RadioCam.description }}</p>
+                </div>
+                <div>
+                    <ng-container [ngSwitch]="RadioCam.type">
+                        <div class="iframe" *ngSwitchCase="'iframe'">
+                            <div [innerHTML]="RadioCam.videoIframe | keepHtml" runScripts class="if-content"></div>
+                        </div>
+                        <div *ngSwitchCase="'url'">
+                            <iframe width="100%" height="100%" [src]='RadioCam.videoUrl | youtube' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    <!-- La mega tv-->
+    <ng-template #tvObj>
+        <div class="p-none switch-lmtv">
+            <div class="radiocam-wraper lamgplay animated fadeIn">
+                <div>
+                    <div class="radio-title">
+                        <h2 class="text-white">LA MEGA
+                            <div class="wrap-icon"><i class="icon-triangle-down"></i></div> PLAY</h2>
+                    </div>
+                    <div class="at-live">en vivo</div>
+                    <h3 class="title-token py-1">{{ RadioCamTv.title }}</h3>
+                    <p>{{ RadioCamTv.description }}</p>
+                </div>
+
+                <div>
+                    <ng-container [ngSwitch]="RadioCamTv.type">
+                        <div class="iframe" *ngSwitchCase="'iframe'">
+                            <div [innerHTML]="RadioCamTv.videoIframe | keepHtml" runScripts class="if-content"></div>
+                        </div>
+                        <div *ngSwitchCase="'url'">
+                            <iframe width="100%" height="100%" [src]='RadioCamTv.videoUrl | youtube' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+</ng-container>
+
+
+<!-- Tabs RadioCam y La Mega tv-->
+<ng-template #tabs>
+    <mat-tab-group class="switch-lmtv" animationDuration="0ms">
+        <ng-container *ngIf="RadioCam">
+            <ng-container *ngIf="RadioCam.isActive">
+                <ng-container *ngIf="onlyOne == false ; else radioCam">
+                    <mat-tab label="{{RadioCam.tabLabel}}">
+                        <ng-template matTabContent>
+                            <div class="radiocam-wraper radioCam animated fadeIn">
+                                <span class="radio-gradient"></span>
+                                <div>
+                                    <div class="radio-title">
+
+                                        <h2 class="at-top20 text-white">RADIOCAM</h2>
+                                    </div>
+                                    <div class="at-live">en vivo</div>
+                                    <h3 class="title-token py-1">{{ RadioCam.title }}</h3>
+                                    <p>{{ RadioCam.description }}</p>
+                                </div>
+
+                                <div>
+                                    <ng-container [ngSwitch]="RadioCam.type">
+                                        <div class="iframe" *ngSwitchCase="'iframe'">
+                                            <div [innerHTML]="RadioCam.videoIframe | keepHtml" runScripts class="if-content"></div>
+                                        </div>
+                                        <div *ngSwitchCase="'url'">
+                                            <iframe width="100%" height="100%" [src]='RadioCam.videoUrl | youtube' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                      </iframe>
+                                        </div>
+                                    </ng-container>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </mat-tab>
+                </ng-container>
+                <ng-template #radioCam>
+                    <div class="radiocam-wraper radioCam animated fadeIn">
+                        <span class="radio-gradient"></span>
+                        <div>
+                            <div class="radio-title">
+                                <h2 class="at-top20 text-white">RADIOCAM</h2>
+                            </div>
+                            <div class="at-live">en vivo</div>
+                            <h3 class="title-token py-1">{{ RadioCam.title }}</h3>
+                            <p>{{ RadioCam.description }}</p>
+                        </div>
+                        <div>
+                            <ng-container [ngSwitch]="RadioCam.type">
+                                <div class="iframe" *ngSwitchCase="'iframe'">
+                                    <div [innerHTML]="RadioCam.videoIframe | keepHtml" runScripts class="if-content"></div>
+                                </div>
+                                <div *ngSwitchCase="'url'">
+                                    <iframe width="100%" height="100%" [src]='RadioCam.videoUrl | youtube' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                  </iframe>
+                                </div>
+                            </ng-container>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </ng-container>
+        <ng-container *ngIf="RadioCamTv">
+            <ng-container *ngIf="RadioCamTv.isActive">
+                <mat-tab label="{{RadioCamTv.tabLabel}}">
+                    <ng-template matTabContent>
+                        <div class="radiocam-wraper lamgplay animated fadeIn">
+                            <div>
+                                <div class="radio-title">
+                                    <h2 class="text-white">LA MEGA
+                                        <div class="wrap-icon"><i class="icon-triangle-down"></i></div> PLAY
+                                    </h2>
+                                </div>
+                                <div class="at-live">en vivo</div>
+                                <h3 class="title-token py-1">{{ RadioCamTv.title }}</h3>
+                                <p>{{ RadioCamTv.description }}</p>
+                            </div>
+
+
+                            <div>
+                                <ng-container [ngSwitch]="RadioCamTv.type">
+                                    <div class="iframe" *ngSwitchCase="'iframe'">
+                                        <div [innerHTML]="RadioCamTv.videoIframe | keepHtml" runScripts class="if-content"></div>
+                                    </div>
+                                    <div *ngSwitchCase="'url'">
+                                        <iframe width="100%" height="100%" [src]='RadioCamTv.videoUrl | youtube' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                                    </div>
+                                </ng-container>
+                            </div>
+                        </div>
+                    </ng-template>
+
+                </mat-tab>
+            </ng-container>
+        </ng-container>
+    </mat-tab-group>
+</ng-template>

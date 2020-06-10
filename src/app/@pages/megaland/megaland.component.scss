@@ -1,0 +1,24 @@
+@import '../../styles/default-elements/variables.scss';
+.header-title {
+    margin: 25px 0;
+    img {
+        width: 100%;
+        display: block;
+        max-width: 270px;
+        margin: 0 auto;
+    }
+}
+
+.megaland-ads-wrapper {
+    background-color: #E2E2E2;
+    padding: 20px 0;
+    margin: 50px auto;
+}
+
+@media (min-width: $xsmall-min) {
+    .header-title {
+        img {
+            max-width: 520px;
+        }
+    }
+}

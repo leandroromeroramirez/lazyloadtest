@@ -1,0 +1,53 @@
+//fonts
+//bold text
+%base-headReg {
+  font-family: 'Chivo', sans-serif;
+  font-weight: 900;
+}
+//bold italic text
+%base-headIt {
+  @extend %base-headReg;
+  font-style: italic;
+}
+//container boxes
+//block-box
+%block-box {
+  display: block;
+  position: relative;
+}
+//inline-boxes
+%inline-box {
+  display: inline-block;
+  position: relative;
+}
+%intop-box {
+  @extend %inline-box;
+  vertical-align: top;
+}
+%inmid-box {
+  @extend %inline-box;
+  vertical-align: middle;
+}
+%inbottom-box {
+  @extend %inline-box;
+  vertical-align: bottom;
+}
+//flexbox
+%flex-box {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+//button and links
+%gen-smlink {
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Chivo', sans-serif;
+  font-weight: bold;
+}
+%gen-bgbutton {
+  cursor: pointer;
+  font-size: 15px;
+  @extend %base-headReg;
+}

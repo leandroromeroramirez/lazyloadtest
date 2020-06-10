@@ -1,0 +1,122 @@
+//colors
+//neutral
+$black: #000000;
+$white: #ffffff;
+$mine-shaft: #323232;
+$boulder: #797979;
+$gray: #828282;
+$gray-background: #f3f3f3;
+
+//primary
+$carnation: #f85858;
+$blaze-orange: #ff6000;
+$torch-red: #ff1157;
+$gulf-blue: #030658;
+
+//secondary
+$red-orange: #ff431d;
+$turquoise: #50e3c2;
+$aqua: #8bfdfd;
+$peach: #ffeddc;
+$port-gore: #1c1e50;
+$tawny-port: #71213f;
+$festival: #fcf16c;
+$navy-blue: #000475;
+$aqua: #00ffff;
+$cornflower-blue: #141be9;
+$card-background: #292c77;
+$pure-pink: #ff00aa;
+$red-earth: #DD260E;
+$blue-award: #4242b4;
+$dark-blue-award: #1A1D74;
+$background-awards: #202381;
+
+//Megaland Colors 
+$bg-green-megaland: #7df9a9;
+$title-font-color: #6d2bff;
+$bg-purple-megaland: #3908a5;
+$bg-yellow-megaland: #fdce56;
+$bg-dark-yellow-megaland: #ffba09;
+$bg-rose-megaland: #ff5858;
+$bg-pink-megaland: #f9c6e1;
+$megaland-aqua: #36ffee;
+
+//used on background gradients
+$milan: #fef9a5;
+$jagged-ice: #c6e7e1;
+$rose: #ff006a;
+$blue-gradient: #1d7bff;
+$aqua-gradient: #1dffee;
+$dark-torch: #a2194e;
+
+//gradients
+$milan-orange: linear-gradient(135deg, #fef9a5 0%, #ff6800 100%);
+$ice-aqua: linear-gradient(45deg, #c6e7e1 0%, #8bfdfd 100%);
+$heaven-blue: linear-gradient(to bottom, #292c77 55%, #046dc9 100%);
+$orange-award:linear-gradient(135deg, #f59734 0%,#d51910 100%);
+
+//shadow
+$out-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.1);
+
+//fonts
+$headings-font: "Chivo", sans-serif;
+$body-font: "Roboto Slab", serif;
+$chivo-black: 900;
+$weight-bold: bold;
+$alfa-Slab: 'Alfa Slab'; 
+$lato-bold: 'Lato Bold';
+$latoregular: 'latoregular';
+ 
+//base font for mobile and desktop
+$font-size-base: 18px;
+$font-size-large: ceil(($font-size-base * 1.15)); // ~21px
+$font-size-small: ceil(($font-size-base * 0.8)); // ~15px
+
+//headings
+
+$heading-one: 18px;
+$heading-two: 20px;
+$heading-three: 30px;
+$heading-four: 40px;
+$heading-five: 130px;
+
+//borders
+$circle: 50%;
+$rounded: 20px;
+$rounded-top: 20px 20px 0 0;
+$rounded-bot: 0 0 20px 20px;
+$rounded-right: 0 20px 20px 0;
+$rounded-left: 20px 0 0 20px;
+
+//--special border for flags in titles
+$flag-rounded: 30px;
+
+//breakpoints
+
+//Low Resolution Mobiles (Landscape)
+$xs320: 320px;
+
+$xsmall: 768px;
+$xsmall-min: $xsmall;
+
+$small: 992px;
+$small-min: $small;
+
+$medium: 1024px;
+$medium-min: $medium;
+
+$large: 1200px;
+$large-min: $large;
+
+$xsmall-max: calc($small-min - 1);
+$small-max: calc($medium-min - 1);
+$medium-max: calc($large-min - 1);
+
+$gap: 10px;
+//sidebar-width
+$xs-sidebar: 100%;
+$lg-sidebar: 108px;
+//--container stops growing wide at large screen
+//--need to use same $lg-sidebar value
+$lg-main-wraper: calc(100% - 108px);
+$lg-main-container: $large-min;

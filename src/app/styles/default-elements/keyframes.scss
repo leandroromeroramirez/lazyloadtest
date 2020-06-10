@@ -1,0 +1,18 @@
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fromleft {
+    0%   { background-color:$red-orange; left:100%; }
+    100% { background-color:$red-orange; left:-100%;}
+  }
+
+  @-webkit-keyframes imgopacity {
+    0%   { opacity: 0; }
+    50%  { opacity: .1;}
+    70%  { opacity: .3;}
+    90% { opacity: 1;}
+    100% {opacity: 1;}
+
+    // 0%   { opacity: 0; }
+    // 50%  { opacity: 0;}
+    // 70%  { opacity: .2;}
+    // 100% { opacity: 1;}
+  }

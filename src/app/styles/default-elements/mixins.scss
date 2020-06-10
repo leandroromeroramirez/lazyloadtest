@@ -1,0 +1,6 @@
+@mixin propCompatib ($prop, $val) {
+  -webkit-#{$prop}:$val;
+  -moz-#{$prop}:$val;
+  -o-#{$prop}:$val;
+  #{$prop}:$val;
+}

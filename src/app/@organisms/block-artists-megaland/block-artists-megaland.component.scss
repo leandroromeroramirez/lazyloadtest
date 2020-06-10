@@ -1,0 +1,174 @@
+@import '../../styles/default-elements/variables.scss';
+@import '../../styles/default-elements/placeholders.scss';
+.artist-title {
+    background-color: $bg-rose-megaland;
+    width: 85%;
+    padding: 25px 15px 50px;
+    text-align: right;
+    color: $title-font-color;
+    text-transform: uppercase;
+    h2 {
+        @extend %base-headIt;
+        font-size: 35px;
+        letter-spacing: 15px;
+    }
+}
+
+.artist-wrapper {
+    position: relative;
+    .span-left,
+    .span-right {
+        display: none;
+    }
+}
+
+.featured-artists {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: -45px;
+    margin-bottom: 15px;
+    div:nth-child(1) {
+         ::ng-deep .ft-artist {
+            img {
+                width: 86px;
+            }
+        }
+    }
+    div:nth-child(3) {
+         ::ng-deep .ft-artist {
+            img {
+                width: 85px;
+            }
+        }
+    }
+}
+
+.artists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buy-tickets {
+    margin: 0 auto;
+    width: 255px;
+    text-align: center;
+    .ViewMore {
+        @extend %base-headIt;
+        background-color: #071191;
+        color: $white;
+        border-radius: $rounded;
+        display: block;
+        font-size: 15px;
+        margin-top: 3%;
+        margin-bottom: 4%;
+        text-transform: uppercase;
+    }
+    p {
+        @extend %base-headIt;
+        font-weight: normal;
+        font-size: 14px;
+        color: #071191;
+    }
+}
+
+@media(min-width: $xsmall-min) {
+    .artist-title {
+        max-width: 850px;
+        margin: 0 auto;
+        h2 {
+            font-size: 50px;
+        }
+    }
+    .artist-wrapper {
+        padding: 0 65px;
+        // &::before {
+        //   content: "";
+        //   position: absolute;
+        //   width: 102px;
+        //   height: 100%;
+        //   display: block;
+        //   top: 46px;
+        //   left: 30px;
+        //   background:
+        //     // url("assets/img/Megaland/hojas-left.svg") no-repeat,
+        //     linear-gradient(rgba(#25F870, 1) 0%,
+        //     rgba(#25F870, 0.8) 30%,
+        //     rgba($bg-green-megaland, 0) 100%);
+        //   z-index: 0;
+        // }
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   width: 102px;
+        //   height: 100%;
+        //   display: block;
+        //   top: 46px;
+        //   right: 20px;
+        //   background: linear-gradient(rgba(#25F870, 1) 0%,
+        //     rgba(#25F870, 0.8) 30%,
+        //     rgba($bg-green-megaland, 0) 100%);
+        //   z-index: 0;
+        // }
+        // .span-left {
+        //   display: block;
+        //   position: absolute;
+        //   left: 30px;
+        //   z-index: 1;
+        // }
+        // .span-right {
+        //   display: block;
+        //   position: absolute;
+        //   right: 20px;
+        //   z-index: 1;
+        // }
+    }
+    .featured-artists {
+        max-width: 880px;
+        margin: -45px auto 0;
+        div:nth-child(1) {
+             ::ng-deep .ft-artist {
+                img {
+                    width: 180px;
+                }
+            }
+             ::ng-deep .ft-artist-name {
+                margin-top: -29px;
+            }
+        }
+        div:nth-child(2) {
+             ::ng-deep .ft-artist {
+                &::after {
+                    left: 15px;
+                }
+            }
+        }
+        div:nth-child(3) {
+             ::ng-deep .ft-artist {
+                img {
+                    width: auto;
+                }
+                &::after {
+                    width: 220px;
+                    left: -25px;
+                }
+            }
+             ::ng-deep .ft-artist-name {
+                margin-top: -29px;
+            }
+        }
+    }
+    .artists {
+        margin: 55px auto;
+    }
+    .buy-tickets {
+        width: 335px;
+        .ViewMore {
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 50px;
+        }
+    }
+}

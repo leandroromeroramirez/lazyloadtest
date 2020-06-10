@@ -1,0 +1,303 @@
+@import '../../styles/default-elements/variables.scss';
+@import '../../styles/default-elements/placeholders.scss';
+.block-streaming-megaland {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.streaming-wrapper {
+    padding: 10px 20px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 87%;
+        height: 190px;
+        bottom: 0;
+        left: 10px;
+        z-index: 1;
+        background-color: $bg-green-megaland;
+    }
+    .triangle {
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
+    .stain {
+        position: absolute;
+        top: -30px;
+        left: 120px;
+        width: 100px;
+    }
+    .hojas {
+        position: absolute;
+        bottom: 40px;
+        right: 1px;
+        width: 200px;
+    }
+    div {
+        position: relative;
+        z-index: 2;
+         ::ng-deep iframe {
+            height: 230px;
+        }
+    }
+}
+
+.megaland-counter {
+    .hash {
+        width: 85%;
+        padding: 12px 15px;
+        text-align: right;
+        background-color: $bg-rose-megaland;
+        color: $white;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 104.5%;
+            height: 170px;
+            left: -15px;
+            top: -170px;
+            background: linear-gradient( rgba($bg-rose-megaland, 0) 0%, $bg-rose-megaland 30%, $bg-rose-megaland 100%);
+        }
+        h2 {
+            @extend %base-headIt;
+            font-size: 20px;
+            letter-spacing: 10px;
+            opacity: .8;
+        }
+    }
+}
+
+.counter-wrapper {
+    background-color: $bg-yellow-megaland;
+    display: flex;
+    align-items: center;
+}
+
+.counter-started {
+    position: relative;
+    z-index: 1;
+    h2 {
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+}
+
+.date-place {
+    background-color: $bg-dark-yellow-megaland;
+    padding: 0 10px 15px;
+    position: relative;
+    &::after {
+        content: "";
+        background: url("./../../../assets/img/Megaland/counter.svg") no-repeat right;
+        width: 100%;
+        height: 44px;
+        position: absolute;
+        bottom: 0;
+        right: -42px;
+        background-size: contain;
+    }
+    .date-content {
+        max-width: 90px;
+        margin: 0 auto;
+    }
+    h3 {
+        @extend %base-headIt;
+        font-size: 70px;
+    }
+    h5 {
+        @extend %base-headIt;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: -10px 0 5px;
+    }
+    p {
+        font-family: $headings-font;
+        font-size: 12px;
+        line-height: 13px;
+    }
+}
+
+.counter {
+    padding: 10px;
+    text-align: center;
+    min-width: 245px;
+    .cuenta {
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .title {
+        @extend %base-headReg;
+        background-color: $gulf-blue;
+        padding: 3px;
+        border-radius: 10px;
+        color: $white;
+        font-size: 9px;
+        text-transform: uppercase;
+        max-width: 60px;
+        margin: 0 auto;
+    }
+    h2 {
+        @extend %base-headIt;
+        font-size: 20px;
+        color: $gulf-blue;
+    }
+}
+
+.end-event {
+    position: relative;
+    margin: 0 auto;
+    &::before {
+        content: "";
+        background: url("./../../../assets/img/Megaland/counter.svg") no-repeat;
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-size: contain;
+    }
+    h2 {
+        font-size: 38px;
+        margin: 30px auto;
+    }
+}
+
+.dias {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: $gulf-blue;
+    // font-family: $headings-font;
+    p {
+        @extend %base-headReg;
+        font-size: 30px;
+        line-height: 0.5;
+        text-align: left;
+        width: 60px;
+        span {
+            font-size: 10px;
+        }
+    }
+}
+
+@media(min-width: $xsmall-min) {
+    .streaming-wrapper {
+        padding: 30px 50px;
+        &::after {
+            width: 92%;
+            height: 370px;
+            left: 4%;
+        }
+        .triangle {
+            top: 10px;
+            left: 150px;
+            width: 140px;
+        }
+        .stain {
+            top: -40px;
+            left: 250px;
+            width: 180px;
+        }
+        .hojas {
+            width: 360px;
+        }
+        div {
+             ::ng-deep iframe {
+                height: 440px;
+            }
+        }
+    }
+    .megaland-counter {
+        .hash {
+            width: 80%;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 370px;
+                left: 0;
+                top: -370px;
+            }
+            h2 {
+                font-size: 40px;
+            }
+        }
+    }
+    .counter-wrapper {
+        width: 100%;
+    }
+    .date-place {
+        padding: 0 10px 15px 45px;
+        &::after {
+            height: 95px;
+            right: 0;
+        }
+        .date-content {
+            max-width: none;
+            width: 360px;
+        }
+        h3 {
+            font-size: 90px;
+        }
+        h5 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    .counter {
+        .title {
+            margin: 0;
+        }
+    }
+    .end-event {
+        &::before {
+            height: 70px;
+            left: -80px;
+        }
+        &::after {
+            content: "";
+            background: url("./../../../assets/img/Megaland/counter.svg") no-repeat right;
+            width: 100%;
+            height: 70px;
+            position: absolute;
+            bottom: 0;
+            right: -80px;
+            background-size: contain;
+        }
+    }
+    .dias {
+        p {
+            font-size: 45px;
+            line-height: 0.7;
+            width: 100px;
+            max-width: 85px;
+            // &:first-child {
+            //   max-width: 60px;
+            // }
+            span {
+                font-size: 15px;
+            }
+        }
+    }
+    .counter-started {
+        .date-place {
+            &:after {
+                right: -35px;
+            }
+            .date-content {
+                max-width: 300px;
+            }
+            h5 {
+                font-size: 30px;
+            }
+        }
+        h2 {
+            font-size: 38px;
+        }
+    }
+}

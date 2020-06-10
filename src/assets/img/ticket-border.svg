@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 39 415" style="enable-background:new 0 0 39 415;" xml:space="preserve">
+	 <style type="text/css">
+		.ticket-corner-color { fill: #030658; }
+	 </style>
+<g>
+	<path class="ticket-corner-color" d="M36,0C35.7,16.1,22.6,29,6.5,29c-2.2,0-4.4-0.3-6.5-0.7v150.5c2.1-0.5,4.3-0.7,6.5-0.7
+		c16.3,0,29.5,13.2,29.5,29.5C36,223.8,22.8,237,6.5,237c-2.2,0-4.4-0.3-6.5-0.7v150.5c2.1-0.5,4.3-0.7,6.5-0.7
+		c16.1,0,29.2,12.9,29.5,29h3V0H36z"/>
+</g>
+</svg>
