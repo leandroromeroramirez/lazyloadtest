@@ -1,0 +1,10 @@
+<p>section-home works!</p>
+<p>{{sectionName}}</p>
+
+<ng-container *ngIf="items">
+  <div *ngFor="let item of items">
+    <div>
+      <h5>{{item.name}}</h5>
+    </div>
+  </div>
+</ng-container>

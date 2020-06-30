@@ -1,0 +1,5 @@
+<p>section-note works!</p>
+
+<app-note [note]="currentNote">
+  <app-reaction [reaction-counter]="currentNote.reactions" (reaction)="sendReaction($event)"></app-reaction>
+</app-note>
