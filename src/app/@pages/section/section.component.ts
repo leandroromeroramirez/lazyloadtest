@@ -10,6 +10,7 @@ export class SectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('solo lo uso para manejar las rutas de las secciones');
   }
 
 }

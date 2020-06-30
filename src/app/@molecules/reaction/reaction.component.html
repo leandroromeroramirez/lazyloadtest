@@ -1,0 +1,9 @@
+
+<div>
+  despues de leer esto como te parecio?
+  <div *ngFor="let reaction of counter" (click)="vote(reaction)">
+    <div>imagen</div>
+    <p>{{reaction.name}}</p>
+    <p>{{reaction.votes}}</p>
+  </div>
+</div>
